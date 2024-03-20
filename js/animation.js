@@ -7,8 +7,9 @@ const images = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.particles-container');
-    const containerWidth = container.clientWidth;
-    const containerHeight = container.scrollHeight;
+    // const width = window.innerWidth;
+    // const height = document.querySelector('body').scrollHeight;
+    // const CONTENT_WIDTH = screen.width < 720 ? 250 : 700;
     
     const createParticle = () => {
         const particle = document.createElement('div');
@@ -20,20 +21,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const getParticlesOnThePage = (N) => {
-        const coords = [];
+        // const coords = [];
         for (let i = 1; i <= N; i++) {
             let newParticle = createParticle();
-            let coordX = Math.random() * (containerWidth - 10);
-            let coordY = Math.random() * (containerHeight);
-            while (coords.includes([coordX, coordY])) {
-                coordX = Math.random() * (containerWidth - 10);
-                coordY = Math.random() * (containerHeight);
-            }
+            // let coordX = i < N / 2 ? Math.random() * (width - CONTENT_WIDTH / 2) / 2 : Math.random() * (width - (width - CONTENT_WIDTH) / 2) + (width - (width - CONTENT_WIDTH) / 2);
+            // let coordY = Math.random() * (height);
+            // while (coords.includes([coordX, coordY])) {
+            //     coordX = Math.random() * (containerWidth - 10);
+            //     coordY = Math.random() * (height);
+            // }
 
-            coords.push([coordX, coordY]);
+            // coords.push([coordX, coordY]);
 
-            newParticle.style.top = `${coordY}px`;
-            newParticle.style.left = `${coordX}px`;
+            // newParticle.style.top = `${coordY}px`;
+            // newParticle.style.left = `${coordX}px`;
             newParticle.style.animationDuration = `${Math.random() * 20 + 10}s`;
             container.append(newParticle);
         }
