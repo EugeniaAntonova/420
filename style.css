@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -14,16 +20,13 @@ body {
     background-image: linear-gradient(180.09deg, #F04E08 0.08%, #FF9900 2.18%, #F04E08 45.63%);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
-.particles-container {
-    min-height: 100vh;
-    min-height: 100svh;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
+.js-particles {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .animated-particle {
@@ -38,9 +41,12 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 700px;
     margin: 0 auto;
     padding: 0 16px;
+    position: relative;
+    z-index: 2;
 }
 
 .section-title {
@@ -288,10 +294,11 @@ body {
     margin-top: 0.5em;
 }
 
-.faq-list ol ul > li {
+.faq-list ol ul>li {
     position: relative;
 }
-.faq-list ol ul > li::before {
+
+.faq-list ol ul>li::before {
     content: "";
     position: absolute;
     left: -30px;
@@ -303,8 +310,73 @@ body {
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: left center;
-    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.985 2.04c-.118-.962 1.063-1.512 1.724-.804l2.113 2.266a1 1 0 0 0 1.154.224l2.807-1.31c.878-.409 1.767.545 1.298 1.392l-1.502 2.71a1 1 0 0 0 .143 1.166l2.113 2.266c.66.708.028 1.848-.923 1.664l-3.04-.592a1 1 0 0 0-1.066.497l-1.502 2.71c-.47.847-1.749.598-1.867-.363l-.378-3.075a1 1 0 0 0-.801-.86l-3.041-.59C.266 9.154.107 7.86.985 7.451l2.808-1.31a1 1 0 0 0 .57-1.027L3.985 2.04Z' fill='%23F04D08'/%3E%3C/svg%3E");;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.985 2.04c-.118-.962 1.063-1.512 1.724-.804l2.113 2.266a1 1 0 0 0 1.154.224l2.807-1.31c.878-.409 1.767.545 1.298 1.392l-1.502 2.71a1 1 0 0 0 .143 1.166l2.113 2.266c.66.708.028 1.848-.923 1.664l-3.04-.592a1 1 0 0 0-1.066.497l-1.502 2.71c-.47.847-1.749.598-1.867-.363l-.378-3.075a1 1 0 0 0-.801-.86l-3.041-.59C.266 9.154.107 7.86.985 7.451l2.808-1.31a1 1 0 0 0 .57-1.027L3.985 2.04Z' fill='%23F04D08'/%3E%3C/svg%3E");
+    ;
 }
+
+/* =================================== winners */
+
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 66px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: left;
+  }
+
+  .row .cell {
+    margin-left: -2px;
+  }
+  .row.header .cell {
+    color: #fff;
+  }
+  .row.header .cell:not(:last-of-type) {
+    padding-left: 12px;
+  }
+  
+  .row:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  .row.content .cell {
+    padding: 18px 0 18px 12px;
+  }
+  
+  .row.content .cell:first-of-type {
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .row.content .cell:nth-last-of-type(2) {
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .row.content .cell:last-of-type {
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 34px 24px;
+    background-position: 50% 50%;
+    background-image: url('/assets/images/video.svg');
+  }
+  
+  .row.content .cell:not(:nth-last-of-type(1)) {
+    background-color: #fff;
+  }
+  
+  .row.content .cell:last-child {
+    position: relative;
+    background-color: rgba(255, 161, 75, 1);
+  }
+  .row.content .cell:last-child a {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .row .cell:last-child {
+    margin-left: 10px;  
+  }
+  
 
 @media (max-width: 819px) {
     .how .landing-logo {
@@ -314,6 +386,10 @@ body {
 
 
 @media (min-width: 820px) {
+    .container {
+        padding: 0 18px;
+    }
+
     .animated-particle {
         width: 28px;
         height: 28px;
@@ -425,6 +501,19 @@ body {
     .faq-list li .panel {
         font-size: 20px;
     }
+
+    /* ========================================= winners */
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 76px;
+        font-size: 20px;
+      }
+        .row .cell:nth-of-type(3) {
+          display: none;
+        }
+        .row.content .cell:nth-child(2) {
+        border-radius: 0 10px 10px 0;
+      }
 }
 
 @keyframes rotate {
