@@ -30,3 +30,12 @@ const onAccordeonClick = (evt) => {
 }
 
 accordeon.addEventListener('click', onAccordeonClick);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const learnMore = document.querySelector('.js-learn-more');
+  const id = learnMore.dataset.target;
+  learnMore.onclick = (evt) => {
+    evt.preventDefault();
+    document.querySelector(`${id}`).scrollIntoView();
+  }
+})

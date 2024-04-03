@@ -5,7 +5,7 @@ const images = {
     4: '<svg viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.99 4.071 23.66 1.9l-8.454 18.987L2.99 4.071Z" stroke="#BE3D01" stroke-width="3"/></svg>',
 }
 
-document.addEventListener('DOMContentLoaded', () => {  
+document.addEventListener('DOMContentLoaded', () => {
     const createParticle = () => {
         const particle = document.createElement('div');
         particle.classList.add('animated-particle');
@@ -18,17 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const getParticles = (container, N) => {
         for (let i = 1; i <= N; i++) {
             let newParticle = createParticle();
-            newParticle.style.animationDuration = `${Math.random() * 20 + 10}s`;
+            newParticle.style.animationDuration = `${Math.random() * 20 + 7}s`;
             container.append(newParticle);
         }
     }
 
     const decorate = () => {
         const containers = [...document.querySelectorAll('.js-particles')];
-        console.log(containers);
         containers.forEach((container) => {
             let n = container.dataset.particles;
-            console.log(n);
             getParticles(container, n);
         })
     }

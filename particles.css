@@ -31,6 +31,16 @@
 .faq .animated-particle:nth-child(9) {top: 277px; right: 0%;}
 .faq .animated-particle:nth-child(10) {top: 390px; right: 1%;}
 
+.winners .animated-particle:nth-of-type(2) {top: -25px; left: 21%;}
+.winners .animated-particle:nth-of-type(3) {top: 13%; left: 3%;}
+.winners .animated-particle:nth-of-type(4) {top: 66%; left: 0%;}
+.winners .animated-particle:nth-of-type(5) {top: 96%; left: 12%;}
+.winners .animated-particle:nth-of-type(6) {top: 94%; left: 45%;}
+.winners .animated-particle:nth-of-type(7) {top: -34px; right: 39%;}
+.winners .animated-particle:nth-of-type(8) {top: 17%; right: 1%;}
+.winners .animated-particle:nth-of-type(9) {top: 48%; right: 1%;}
+.winners .animated-particle:nth-of-type(10) {top: 98%; right: 0%;}
+
 @media (min-width: 820px) {
     .hero .animated-particle:nth-of-type(2) {top: 157px; right: 9%}
     .hero .animated-particle:nth-of-type(3) {top: 431px; right: 24%;}
@@ -61,4 +71,14 @@
     .faq .animated-particle:nth-child(6) {top: 142px; right: 6%;}
     .faq .animated-particle:nth-child(7) {top: 390px; right: 18%;}
     .faq .animated-particle:nth-child(8) {top: 125px; right: 17%;}
+
+    .winners .animated-particle:nth-of-type(2) {top: -50px; left: 33%;}
+    .winners .animated-particle:nth-of-type(3) {top: 5%; left: 4%;}
+    .winners .animated-particle:nth-of-type(4) {top: 30%; left: 5%;}
+    .winners .animated-particle:nth-of-type(5) {top: 46%; left: 18%;}
+    .winners .animated-particle:nth-of-type(6) {top: 70%; left: 10%;}
+    .winners .animated-particle:nth-of-type(7) {top: -11px; right: 54%;}
+    .winners .animated-particle:nth-of-type(8) {top: 15%; right: 2%;}
+    .winners .animated-particle:nth-of-type(9) {top: 46%; right: 6%;}
+    .winners .animated-particle:nth-of-type(10) {top: 75%; right: 5%;}
 }

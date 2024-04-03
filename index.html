@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/particles.css">
 </head>
@@ -12,41 +13,51 @@
 <body>
     <main class="page">
         <section class="hero js-particles" data-particles="8">
-            <div class="container">
+            <div class="container-420">
                 <img src="/assets/images/logo.svg" alt="логотип лотереи 4/20" class="landing-logo">
-                <h2 class="section-title">Выиграй iPhone&nbsp;15&nbsp;Pro</h2>
-                <p class="section-text">Купи лотонабор <b>4/20</b> и&nbsp;участвуй в&nbsp;розыгрыше <b>19&nbsp;марта</b></p>
+                <h2 class="section-title">Выиграйте iPhone&nbsp;15&nbsp;Pro</h2>
+                <p class="section-text">Купите ЛотоРабор <b>"4/20"</b> и&nbsp;участвуйте в&nbsp;еженедельном розыгрыше
+                    iPhone&nbsp;15&nbsp;Pro</p>
                 <img src="/assets/images/phones.png" width="599" alt="призовые айфоны" class="img">
-                <a href="#" class="action">подробнее</a>
+                <a href="#how" class="action js-learn-more" data-target="#how">подробнее</a>
             </div>
         </section>
-        <section class="how js-particles" data-particles="12">
-            <div class="container">
+        <section class="how js-particles" id="how" data-particles="12">
+            <div class="container-420">
                 <div class="top">
                     <h2 class="section-title">Как принять участие?</h2>
-                    <div class="descr-container">
+                    <div class="descr-container-420">
                         <h3 class="decorated ticket">Купите ЛотоНабор</h3>
-                        <p>Приобретите ЛотоНабор "4/20" c пятью лотерейными комбинациями</p>
+                        <p>Приобретите ЛотоНабор "4/20" из 10 билетов лотереи "4/20"</p>
                     </div>
-                    <div class="descr-container">
+                    <div class="descr-container-420">
                         <h3 class="decorated youtube">Смотрите эфир</h3>
-                        <p>Следите за розыгрышем в прямом эфире YouTube канала 19 марта в 21:00</p>
+                        <p>Следите за&nbsp;розыгрышем iPhone 15&nbsp;Pro каждый понедельник в&nbsp;21:00&nbsp;в прямом
+                            эфире <a href="https://www.youtube.com/@SattyZhuldyz" target="_blank">YouTube</a> канала</p>
                     </div>
-                    <a href="#" class="action">купить&nbsp;лотонабор</a>
+                    <a href="https://sz.kz/game?gameid=1042&ispack=true" class="action">купить&nbsp;лотонабор</a>
                 </div>
                 <div class="bottom">
-                    <div class="descr-container form-container" style="min-height: 412px;"></div>
-                    <div class="descr-container logo-container">
-                        <img src="/assets/images/logo.svg" alt="логотип лотереи 4/20" class="landing-logo">
-                        <p>Участники, купившие 5&nbsp;билетов, автоматически участвуют в&nbsp;розыгрыше IPHONE 15&nbsp;PRO.
-                            Регистрация не&nbsp;требуется.</p>
-                        <p>19&nbsp;марта 2024&nbsp;г.&nbsp;в&nbsp;эфире программы 5/36 пройдет розыгрыш.</p>
+                    <div class="descr-container-420 form-container-420">
+                        <iframe id="form-iframe" title="Проверить свое участие в розыгрыше"
+                            src="https://module.sz.kz/promo-registration-form/?lang=ru&phone=&email=&date_birth=&terminal_id=site&FIO=&sex=&promo_type=5&promo_id=26"
+                            allowtransparency="true" width="100%" frameborder="0" scrolling="no" style="height: 350px;">
+                        </iframe>
                     </div>
-                    <div class="descr-container rules-container">
+                    <div class="descr-container-420 logo-container-420">
+                        <img src="/assets/images/logo.svg" alt="логотип лотереи 4/20" class="landing-logo">
+                        <p>Участники, купившие ЛотоНабор из&nbsp;10&nbsp;билетов лотереи &laquo;4/20&raquo;,
+                            автоматически участвуют в&nbsp;розыгрыше iPhone 15&nbsp;Pro. Регистрация не&nbsp;требуется.
+                        </p>
+                        <p>Розыгрыши проводятся каждый понедельник, в&nbsp;прямом эфире YouTube канала в&nbsp;тираже
+                            лотереи &laquo;5/36&raquo;</p>
+                    </div>
+                    <div class="descr-container-420 rules-container-420">
                         <h3>Участники розыгрыша 21.01.2024</h3>
                         <p>Обновление списка осуществляется 1 раз в сутки в 07:00.</p>
                         <a href="" class="action rules">
-                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M10.149 1H5a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h7a4 4 0 0 0 4-4V6.136M10.149 1 16 6.136M10.149 1l.07 2.229a3 3 0 0 0 2.998 2.907H16"
                                     stroke="#fff" stroke-width="1.5" stroke-linejoin="round" />
@@ -58,16 +69,18 @@
             </div>
         </section>
         <section class="faq js-particles" data-particles="8">
-            <div class="container">
+            <div class="container-420">
                 <h2 class="section-title">Часто задаваемые вопросы</h2>
                 <ul class="faq-list">
                     <li>
-                        <button type="button" class="js-toggle">Как проводится розыгрыш iPhone&nbsp;15&nbsp;Pro?</button>
+                        <button type="button" class="js-toggle">Как проводится розыгрыш
+                            iPhone&nbsp;15&nbsp;Pro?</button>
                         <div class="panel">
                             <p>Каждому Лотонабору будет присвоен &laquo;Номер для розыгрыша&raquo;, по&nbsp;которому
                                 и&nbsp;будет определен победитель iPhone 15pro. В&nbsp;розыгрыше 19&nbsp;марта, примут
                                 участие все ЛотоНаборы 4/20, купленные с&nbsp;12&nbsp;марта 19:45 по&nbsp;19&nbsp;марта
-                                19:45. ЛотоНаборы 4/20 купленные позже указанного времени, примут участие в&nbsp;следующем
+                                19:45. ЛотоНаборы 4/20 купленные позже указанного времени, примут участие
+                                в&nbsp;следующем
                                 розыгрыше, который состоится 26&nbsp;марта. Определение победителя будет осуществляться
                                 посредством генератора случайных чисел.
                             </p>
@@ -75,10 +88,12 @@
                                 Победитель в&nbsp;целях публичного размещения информации обязуется без взимания платы
                                 подписать с&nbsp;Оператором лотереи согласие на&nbsp;сбор и&nbsp;обработку персональных
                                 данных и&nbsp;иной информации о&nbsp;Победителе: на&nbsp;создание, публикацию,
-                                воспроизведение и&nbsp;распространение ФИО, изоброжения победителя (в&nbsp;т.ч. фотографии),
+                                воспроизведение и&nbsp;распространение ФИО, изоброжения победителя (в&nbsp;т.ч.
+                                фотографии),
                                 изобразительного произведения (в&nbsp;т.ч.видео) и&nbsp;иных документов, записей
                                 (в&nbsp;т.ч. интервью), произведений, на&nbsp;которых изображен Победитель. Согласие
-                                Победителя бцдет дано по&nbsp;форме и&nbsp;на&nbsp;условиях (в&nbsp;т.ч. срок и&nbsp;цели
+                                Победителя бцдет дано по&nbsp;форме и&nbsp;на&nbsp;условиях (в&nbsp;т.ч. срок
+                                и&nbsp;цели
                                 согласия, место и&nbsp;способ опубликования и&nbsp;распространения) Оператора.
                             </p>
                         </div>
@@ -108,7 +123,8 @@
                         </div>
                     </li>
                     <li>
-                        <button type="button" class="js-toggle">Как увеличить шансы на выигрыш iPhone&nbsp;15&nbsp;Pro?</button>
+                        <button type="button" class="js-toggle">Как увеличить шансы на выигрыш
+                            iPhone&nbsp;15&nbsp;Pro?</button>
                         <div class="panel">
                             <p>
                                 Больше ЛотоНаборов&nbsp;&mdash; больше шансов на&nbsp;выигрыш!
@@ -118,34 +134,38 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="winners js-particles" data-particles="8">
-            <div class="container">
+        <section class="winners js-particles" data-particles="9">
+            <div class="container-420">
                 <h2 class="section-title">Список Победителей</h2>
                 <div class="winners-table" role="table">
-                  <div class="row header" role="row">
-                    <span class="cell" role="cell">Дата</span>
-                    <span class="cell" role="cell">Номер</span>
-                    <span class="cell" role="cell">Город</span>
-                    <span class="cell" role="cell">Тираж</span>
-                  </div>
-                  <div class="row content" role="row">
-                    <span class="cell" role="cell">27.10.2023</span>
-                    <span class="cell" role="cell">№23961154</span>
-                    <span class="cell" role="cell">Астана</span>
-                    <span class="cell" role="cell"><a href="#"></a></span>
-                  </div>
-                  <div class="row content" role="row">
-                    <span class="cell" role="cell">27.10.2023</span>
-                    <span class="cell" role="cell">№23961154</span>
-                    <span class="cell" role="cell">Астана</span>
-                    <span class="cell" role="cell"><a href="#"></a></span>
-                  </div>
+                    <div class="row header" role="row">
+                        <span class="cell" role="cell">Дата</span>
+                        <span class="cell" role="cell">Номер</span>
+                        <span class="cell" role="cell">Город</span>
+                        <span class="cell" role="cell">Тираж</span>
+                    </div>
+
+                    <div class="swiper winners-swiper">
+                        <div class="swiper-wrapper">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
-          </section> -->
+        </section>
     </main>
-    <script src="/js/animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/slider.js"></script>
     <script src="/js/accordeon.js"></script>
+    <script src="/js/animation.js"></script>
+    <template id="row-template">
+        <div class="row content" role="row">
+            <span class="cell date" role="cell">27.10.2023</span>
+            <span class="cell num" role="cell">№23961154</span>
+            <span class="cell city" role="cell">Астана</span>
+            <span class="cell link" role="cell"><a href="#"></a></span>
+        </div>
+    </template>
 </body>
 
 </html>
