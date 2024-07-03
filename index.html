@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/particles.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    <script src="/js/jquery-iframe-auto-height.js" defer></script>
 </head>
 
 <body>
@@ -40,13 +42,15 @@
                 <div class="bottom">
                     <div class="descr-container-420 form-container-420">
                         <iframe id="form-iframe" title="Проверить свое участие в розыгрыше"
-                            src="https://module.sz.kz/promo-registration-form/?lang=ru&phone=&email=&date_birth=&terminal_id=site&FIO=&sex=&promo_type=5&promo_id=26"
-                            allowtransparency="true" width="100%" frameborder="0" scrolling="no" style="height: 350px;">
-                        </iframe>
+                        src="https://module.sz.kz/promo-registration-form/?lang=ru&phone=&email=&date_birth=&terminal_id=site&FIO=&sex=&promo_type=5&promo_id=26"
+                        allowtransparency="true" width="100%" frameborder="0" scrolling="no" style="height: 350px;">
+                    </iframe>
+                    <p style="font-size: 14px; padding: 1em 1.5em;">*Проверка участия в розыгрыше возможна на следующий день после покупки ЛотоНабора</p>
                     </div>
                     <div class="descr-container-420 logo-container-420">
                         <img src="/assets/images/logo.svg" alt="логотип лотереи 4/20" class="landing-logo">
-                        <p>Участники, купившие ЛотоНабор из&nbsp;10&nbsp;билетов лотереи &laquo;4/20&raquo;,
+                        <p>
+                            Участники, купившие ЛотоНабор из&nbsp;10&nbsp;билетов лотереи &laquo;4/20&raquo;,
                             автоматически участвуют в&nbsp;розыгрыше iPhone 15&nbsp;Pro. Регистрация не&nbsp;требуется.
                         </p>
                         <p>Розыгрыши проводятся каждый понедельник, в&nbsp;прямом эфире YouTube канала в&nbsp;тираже
@@ -55,7 +59,7 @@
                     <div class="descr-container-420 rules-container-420">
                         <h3>Участники розыгрыша 21.01.2024</h3>
                         <p>Обновление списка осуществляется 1 раз в сутки в 07:00.</p>
-                        <a href="" class="action rules">
+                        <a href="" class="action rules" data-disabled="false">
                             <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -134,11 +138,11 @@
                 </ul>
             </div>
         </section>
-        <section class="winners js-particles" data-particles="9">
+        <section class="winners js-particles" data-particles="9" style="padding-top: 100px;">
             <div class="container-420">
                 <h2 class="section-title">Список Победителей</h2>
                 <div class="winners-table" role="table">
-                    <div class="row header" role="row">
+                    <div class="row table-header" role="row">
                         <span class="cell" role="cell">Дата</span>
                         <span class="cell" role="cell">Номер</span>
                         <span class="cell" role="cell">Город</span>

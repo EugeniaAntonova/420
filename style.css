@@ -105,6 +105,11 @@ main {
     box-shadow: 0 2px 5px rgba(0 0 0 / 0.6);
 }
 
+.action[data-disabled="true"] {
+    pointer-events: none;
+    filter: grayscale(1);
+}
+
 .hero {
     margin-bottom: 100px;
 }
@@ -355,11 +360,11 @@ main {
     margin-left: -2px;
 }
 
-.row.header .cell {
+.row.table-header .cell {
     color: #fff;
 }
 
-.row.header .cell:not(:last-of-type) {
+.row.table-header .cell:not(:last-of-type) {
     padding-left: 12px;
 }
 
@@ -532,10 +537,16 @@ main {
     }
 
     /* ========================================= winners */
+    .row.table-header .cell:not(:last-of-type) {
+        padding-left: 40px;
+    }
     .row {
         display: grid;
         grid-template-columns: repeat(3, 1fr) 76px;
         font-size: 20px;
+    }
+    .row.content .cell {
+        padding: 18px 0 18px 40px;
     }
 }
 
